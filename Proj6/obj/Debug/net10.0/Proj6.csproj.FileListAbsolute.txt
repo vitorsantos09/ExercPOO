@@ -1,0 +1,14 @@
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\bin\Debug\net10.0\Proj6.exe
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\bin\Debug\net10.0\Proj6.deps.json
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\bin\Debug\net10.0\Proj6.runtimeconfig.json
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\bin\Debug\net10.0\Proj6.dll
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\bin\Debug\net10.0\Proj6.pdb
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\obj\Debug\net10.0\Proj6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\obj\Debug\net10.0\Proj6.AssemblyInfoInputs.cache
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\obj\Debug\net10.0\Proj6.AssemblyInfo.cs
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\obj\Debug\net10.0\Proj6.csproj.CoreCompileInputs.cache
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\obj\Debug\net10.0\Proj6.dll
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\obj\Debug\net10.0\refint\Proj6.dll
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\obj\Debug\net10.0\Proj6.pdb
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\obj\Debug\net10.0\Proj6.genruntimeconfig.cache
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj6\obj\Debug\net10.0\ref\Proj6.dll

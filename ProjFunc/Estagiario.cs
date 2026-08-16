@@ -1,0 +1,4 @@
+class Estagiario : Funcionario
+{
+    
+}

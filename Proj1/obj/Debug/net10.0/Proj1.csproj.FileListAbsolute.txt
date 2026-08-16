@@ -1,0 +1,14 @@
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\proj1\obj\Debug\net10.0\Proj1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\proj1\obj\Debug\net10.0\Proj1.AssemblyInfoInputs.cache
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\proj1\obj\Debug\net10.0\Proj1.AssemblyInfo.cs
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\proj1\obj\Debug\net10.0\Proj1.csproj.CoreCompileInputs.cache
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj1\bin\Debug\net10.0\Proj1.exe
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj1\bin\Debug\net10.0\Proj1.deps.json
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj1\bin\Debug\net10.0\Proj1.runtimeconfig.json
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj1\bin\Debug\net10.0\Proj1.dll
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj1\bin\Debug\net10.0\Proj1.pdb
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj1\obj\Debug\net10.0\Proj1.dll
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj1\obj\Debug\net10.0\refint\Proj1.dll
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj1\obj\Debug\net10.0\Proj1.pdb
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj1\obj\Debug\net10.0\Proj1.genruntimeconfig.cache
+C:\Users\pc\OneDrive\Área de Trabalho\Projs\Proj1\obj\Debug\net10.0\ref\Proj1.dll
