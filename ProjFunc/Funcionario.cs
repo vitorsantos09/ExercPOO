@@ -4,29 +4,29 @@ class Funcionario
 {
     
     public string? Nome {get; set;} // propriedades 
-    
-     public string? Cpf {get; set;}
-    
-     public string? Cargo {get; set;}
-
-     public double Salario {get; set;}
+    public string? Cpf {get; set;}
+    public string? Cargo {get; set;}
+    public double SalarioBruto {get; set;}
+    public double SalarioLiquido {get; set;}
   
 
-    public Funcionario(string? nome, string? cpf, string? cargo, double salario) //inicializando os valores do objeto da propria classe
+    public Funcionario(string? nome, string? cpf, string? cargo, double salarioBruto) //inicializando os valores do objeto da propria classe
     {
         this.Nome = nome;
         this.Cpf = cpf;
         this.Cargo = cargo;
-        this.Salario = salario;
+        this.SalarioBruto = salarioBruto;
     }
 
-    public Funcionario()
+    public virtual double CalcularDesconto(double salarioBruto) // Retorna o valor do desconto sobre o salario bruto
     {
-    }
+       return salarioBruto * 0.06;
 
-    public virtual double CalcularDesconto(double salario) // Retorna o valor do desconto sobre o salario bruto
+    }
+    public virtual double CalcularSalario(double salarioBruto)
     {
-       return salario * 0.06;
-
+        double salarioLiquido = salarioBruto + CalcularDesconto(salarioBruto);
+        return salarioLiquido;
     }
+    
 }

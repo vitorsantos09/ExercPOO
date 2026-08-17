@@ -1,8 +1,15 @@
 class FuncionarioTemp : Funcionario
 {
-    public double DescontoTemp;
-    public FuncionarioTemp(string nome, string cpf, string cargo, float salario ) : base(nome, cpf, cargo, salario)
+    public double ValorHora = 7.37;
+    public double HorasTrabalhadas {get;set;}
+    public FuncionarioTemp(string nome,string cpf,string cargo,double salarioBruto, double horastrabalhadas) : base(nome,cpf,cargo,salarioBruto)
     {
-        DescontoTemp *= 0.3;
+        this.HorasTrabalhadas = horastrabalhadas;
+    }
+
+    public double CalcularDescontoTemp(double salarioBruto, double valorhora, double horastrabalhadas)
+    {
+        double desconto = base.CalcularDesconto(salarioBruto);
+        return desconto + (horastrabalhadas * valorhora);
     }
 }
