@@ -20,12 +20,12 @@ class Funcionario
 
     public virtual double CalcularDesconto(double salarioBruto) // Retorna o valor do desconto sobre o salario bruto
     {
-       return salarioBruto * 0.06;
+       return salarioBruto * 0.06; //Retorna o valor do desconto, ex: 1066 * 6% = 63,96
 
     }
     public virtual double CalcularSalario(double salarioBruto)
     {
-        double salarioLiquido = salarioBruto + CalcularDesconto(salarioBruto);
+        double salarioLiquido = salarioBruto - CalcularDesconto(salarioBruto);
         return salarioLiquido;
     }
     

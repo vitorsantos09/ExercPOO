@@ -11,12 +11,13 @@ class FuncionarioCLT : Funcionario
     public override double CalcularDesconto(double salarioBruto) // O FuncionarioCLT está sobrescrevendo o método CalcularDesconto() da classe Funcionario. Ele recebe o salário bruto e retorna um double representando um desconto.
     {
         double desconto = base.CalcularDesconto(salarioBruto); //chama o método da classe pai (Funcionario).
-        return INSS - desconto;
+        return INSS + desconto;
     }
     public override double CalcularSalario(double salarioBruto)
     {
-        double salarioLiquido = base.CalcularSalario(salarioBruto);
-        return salarioLiquido;
+        double descontos = CalcularDesconto(salarioBruto);
+        return descontos - salarioBruto;
+        ;
     }
     
 }
