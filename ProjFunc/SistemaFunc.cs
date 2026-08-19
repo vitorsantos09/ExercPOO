@@ -48,9 +48,14 @@ class SistemaFunc
     }
     public void ListarFunc()
     {
-        for(int i = 0; i < funcionarios.Length; i++)
+        for(int i = 0; i < quant; i++)
         {
-            Console.WriteLine(funcionarios[i]);
+            Console.WriteLine(funcionarios[i].Nome);
+            Console.WriteLine(funcionarios.GetType().Name.ToUpper()); // Mostra o tipo exato do Objeto, ou seja mostra o nome exato do objeto, só funciona porconta que, ex: FuncionarioCLT tem Herança com o Funcionario
+            Console.WriteLine(funcionarios[i].Cpf);
+            Console.WriteLine(funcionarios[i].Cargo);
+            Console.WriteLine(funcionarios[i].SalarioBruto);
+            
         }
     }
    /* public double CalcularSalarios()
