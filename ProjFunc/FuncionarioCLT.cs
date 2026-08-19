@@ -16,7 +16,7 @@ class FuncionarioCLT : Funcionario
     public override double CalcularSalario(double salarioBruto)
     {
         double descontos = CalcularDesconto(salarioBruto);
-        return descontos - salarioBruto;
+        return salarioBruto - descontos;
         ;
     }
     
