@@ -53,7 +53,8 @@ class SistemaFunc
             Console.WriteLine(funcionarios[i]);
         }
     }
-    public double CalcularSalarios()
+   /* public double CalcularSalarios()
     {
         return; //metodos aqui, valor a ser exibido pelo return
-    }
+    }*/
+}

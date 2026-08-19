@@ -37,7 +37,7 @@ class Program
                     break;
 
             case 3: 
-                sistema.CalcularSalarios();
+               // sistema.CalcularSalarios();
                     break;
                 }
                 
