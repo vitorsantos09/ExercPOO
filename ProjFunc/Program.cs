@@ -36,7 +36,7 @@
                     break;
 
             case 3: 
-               // sistema.CalcularSalarios();
+                sistema.CalcularSalarios();
                     break;
                 }
                 
@@ -55,8 +55,8 @@
         salarioBruto = double.Parse(Console.ReadLine()!);
         
 }
-static double LeHoras(string nome)
-    {
+    static double LeHoras(string nome) {
+
         Console.WriteLine($"Quantas horas o Funcionario {nome} trabalhou?");
             double horastrabalhadas = double.Parse(Console.ReadLine()!);
             return horastrabalhadas;

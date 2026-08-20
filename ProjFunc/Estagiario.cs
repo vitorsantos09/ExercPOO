@@ -12,7 +12,7 @@ class Estagiario : Funcionario
     }
     public override double CalcularSalario(double salarioBruto)
     {
-        Bolsa = Bolsa -CalcularDesconto(salarioBruto);
+        Bolsa = Bolsa - CalcularDesconto(salarioBruto);
         return Bolsa;
     }
 }

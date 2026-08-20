@@ -6,7 +6,7 @@ class FuncionarioTemp : Funcionario
         this.HorasTrabalhadas = horastrabalhadas;
     }
 
-    public double CalcularDescontoTemp(double salarioBruto, double horastrabalhadas)
+    public double CalcularDesconto(double salarioBruto, double horastrabalhadas)
     {
         double desconto = base.CalcularDesconto(salarioBruto);
         return desconto - (horastrabalhadas * 7.37);
@@ -14,6 +14,6 @@ class FuncionarioTemp : Funcionario
     public override double CalcularSalario(double salarioBruto)
     {
          double desconto = CalcularDesconto(salarioBruto);
-         return desconto - salarioBruto;
+         return salarioBruto-desconto;
     }
 }

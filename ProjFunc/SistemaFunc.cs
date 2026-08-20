@@ -14,18 +14,12 @@ class SistemaFunc
             if (opcad == 1)
             {
                 FuncionarioCLT func = new(nome, cargo, cpf, salarioBruto);
-
-                double salarioLiquido = func.CalcularSalario(salarioBruto); //linha deve ser colocada no metodo de calculo de salario aqui dessa classe, pois ela pertence ao case 3
-
                 funcionarios[quant] = func; // o vetor funcionarios na posição quantidade, ex: posição 1 recebe o objeto funcionarioCLT
                 quant++;
             }
             else if (opcad == 2)
             {
-               Estagiario estagiario = new(nome,cargo,cpf,salarioBruto);
-
-               double Bolsa = estagiario.CalcularSalario(salarioBruto);//linha deve ser colocada no metodo de calculo de salario aqui dessa classe, pois ela pertence ao case 3
-
+               Estagiario estagiario = new(nome, cargo, cpf, salarioBruto);
                funcionarios[quant] = estagiario;
                quant++;
                                                             
@@ -38,11 +32,7 @@ class SistemaFunc
     }
     public void CadastrarFuncTemp(string nome, string cargo, string cpf, double salarioBruto, double horastrabalhadas)
     {
-        FuncionarioTemp funcTemp = new(nome,cargo,cpf,salarioBruto,horastrabalhadas);
-
-        funcTemp.CalcularDescontoTemp(salarioBruto,horastrabalhadas);//linha deve ser colocada no metodo de calculo de salario aqui dessa classe, pois ela pertence ao case 3
-        double salarioLiquido = funcTemp.CalcularSalario(salarioBruto);//linha deve ser colocada no metodo de calculo de salario aqui dessa classe, pois ela pertence ao case 3
-
+        FuncionarioTemp funcTemp = new(nome, cargo, cpf, salarioBruto, horastrabalhadas);
         funcionarios[quant] = funcTemp;
         quant++;
     }
@@ -50,16 +40,27 @@ class SistemaFunc
     {
         for(int i = 0; i < quant; i++)
         {
+            Console.WriteLine("==========================");
             Console.WriteLine(funcionarios[i].Nome);
-            Console.WriteLine(funcionarios.GetType().Name.ToUpper()); // Mostra o tipo exato do Objeto, ou seja mostra o nome exato do objeto, só funciona porconta que, ex: FuncionarioCLT tem Herança com o Funcionario
+            Console.WriteLine(funcionarios[i].GetType().Name.ToUpper()); // Mostra o tipo exato do Objeto, ou seja mostra o nome exato do objeto, só funciona porconta que, ex: FuncionarioCLT tem Herança com o Funcionario
             Console.WriteLine(funcionarios[i].Cpf);
             Console.WriteLine(funcionarios[i].Cargo);
             Console.WriteLine(funcionarios[i].SalarioBruto);
-            
+            Console.WriteLine("==========================");
+
+
         }
     }
-   /* public double CalcularSalarios()
+   public void CalcularSalarios()
     {
-        return; //metodos aqui, valor a ser exibido pelo return
-    }*/
+        for (int i = 0; i < quant; i++)
+        {
+            Console.WriteLine("================================================");
+            double salarioLiquido = funcionarios[i].CalcularSalario(funcionarios[i].SalarioBruto);
+            Console.WriteLine(funcionarios[i].Nome);
+            Console.WriteLine(funcionarios[i].Cargo);
+            Console.WriteLine(salarioLiquido);
+        }
+
+    }
 }

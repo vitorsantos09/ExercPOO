@@ -13,3 +13,18 @@ C:\Users\pc\OneDrive\Área de Trabalho\Projs\projfunc\obj\Debug\net10.0\refint\P
 C:\Users\pc\OneDrive\Área de Trabalho\Projs\projfunc\obj\Debug\net10.0\ProjFunc.pdb
 C:\Users\pc\OneDrive\Área de Trabalho\Projs\projfunc\obj\Debug\net10.0\ProjFunc.genruntimeconfig.cache
 C:\Users\pc\OneDrive\Área de Trabalho\Projs\projfunc\obj\Debug\net10.0\ref\ProjFunc.dll
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\bin\Debug\net10.0\ProjFunc.exe
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\bin\Debug\net10.0\ProjFunc.deps.json
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\bin\Debug\net10.0\ProjFunc.runtimeconfig.json
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\bin\Debug\net10.0\ProjFunc.dll
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\bin\Debug\net10.0\ProjFunc.pdb
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\obj\Debug\net10.0\ProjFunc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\obj\Debug\net10.0\ProjFunc.AssemblyInfoInputs.cache
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\obj\Debug\net10.0\ProjFunc.AssemblyInfo.cs
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\obj\Debug\net10.0\ProjFunc.csproj.CoreCompileInputs.cache
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\obj\Debug\net10.0\ProjFunc.sourcelink.json
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\obj\Debug\net10.0\ProjFunc.dll
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\obj\Debug\net10.0\refint\ProjFunc.dll
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\obj\Debug\net10.0\ProjFunc.pdb
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\obj\Debug\net10.0\ProjFunc.genruntimeconfig.cache
+C:\Users\lab3136\Desktop\ExercPOO\ExercPOO\ProjFunc\obj\Debug\net10.0\ref\ProjFunc.dll

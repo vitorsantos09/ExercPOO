@@ -16,6 +16,7 @@ class Funcionario
         this.Cpf = cpf;
         this.Cargo = cargo;
         this.SalarioBruto = salarioBruto;
+
     }
 
     public virtual double CalcularDesconto(double salarioBruto) // Retorna o valor do desconto sobre o salario bruto
@@ -25,7 +26,7 @@ class Funcionario
     }
     public virtual double CalcularSalario(double salarioBruto)
     {
-        double salarioLiquido = salarioBruto - CalcularDesconto(salarioBruto);
+        double salarioLiquido =  CalcularDesconto(salarioBruto) - salarioBruto;
         return salarioLiquido;
     }
     
