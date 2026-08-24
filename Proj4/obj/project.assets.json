@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\Projs\\Proj4\\Proj4.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\ExercPOO\\ExercPOO\\Proj4\\Proj4.csproj",
       "projectName": "Proj4",
-      "projectPath": "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\Projs\\Proj4\\Proj4.csproj",
+      "projectPath": "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\ExercPOO\\ExercPOO\\Proj4\\Proj4.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\Projs\\Proj4\\obj\\",
+      "outputPath": "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\ExercPOO\\ExercPOO\\Proj4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config"

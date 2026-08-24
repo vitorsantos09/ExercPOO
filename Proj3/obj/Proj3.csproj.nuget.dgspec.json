@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\Projs\\Proj3\\Proj3.csproj": {}
+    "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\ExercPOO\\ExercPOO\\Proj3\\Proj3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\Projs\\Proj3\\Proj3.csproj": {
+    "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\ExercPOO\\ExercPOO\\Proj3\\Proj3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\Projs\\Proj3\\Proj3.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\ExercPOO\\ExercPOO\\Proj3\\Proj3.csproj",
         "projectName": "Proj3",
-        "projectPath": "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\Projs\\Proj3\\Proj3.csproj",
+        "projectPath": "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\ExercPOO\\ExercPOO\\Proj3\\Proj3.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\Projs\\Proj3\\obj\\",
+        "outputPath": "C:\\Users\\pc\\OneDrive\\Área de Trabalho\\ExercPOO\\ExercPOO\\Proj3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config"
