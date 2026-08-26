@@ -4,7 +4,6 @@ class Sistema
     List<Livro> listLivros = new();
     List<Emprestimo> listEmprestimos = new();
     
-
     public void CadastrarUsuario(string nome, string email, string telefone, string cpf, int idade)
     {
             Usuario usuario = new(nome,email,telefone,cpf,idade);
@@ -39,5 +38,38 @@ class Sistema
         }
         return null;
         
+    }
+    public void RealizarEmprestimo(Usuario user, string buscaLivro)
+    {
+       Livro? livroBuscado = BuscarLivro(buscaLivro);
+       
+        if(livroBuscado != null && livroBuscado.Disponivel)
+        {
+            int idadeMin = (int)livroBuscado.Classificacao;
+            if(user.Idade >= idadeMin)
+            {
+                Emprestimo emp = new(user,livroBuscado);
+                listEmprestimos.Add(emp);
+                livroBuscado.Emprestar();
+            }
+            else
+            {
+                return;
+            }
+        }
+        else
+        {
+            return;
+        }
+    }
+    public void ListarUsuarios()
+    {
+        foreach (Pessoa usuarios in listPessoas)
+        {
+            Console.WriteLine(usuarios.Nome);
+            Console.WriteLine(usuarios.Cpf);
+            Console.WriteLine(usuarios.Email);
+            Console.WriteLine(usuarios.Telefone);
+        }
     }
 }
