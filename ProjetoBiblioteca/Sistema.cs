@@ -74,11 +74,14 @@ class Sistema
     }
     public Usuario? BuscarUsuario(string buscqCPF) //Retorna um objeto user, metodo verifica se existe um usuario
     {
-        foreach(Pessoa user in listPessoas)
+        foreach(Pessoa pessoa in listPessoas)
         {
-            if(user.Cpf == buscqCPF)
+            if(pessoa is Usuario user) //Verifica o tipo pessoa é Usuario?
             {
-                return user;
+                if(user.Cpf == buscqCPF)
+                {
+                    return user;
+                }
             }
         }
         return null;
