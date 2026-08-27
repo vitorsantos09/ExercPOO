@@ -72,4 +72,43 @@ class Sistema
             Console.WriteLine(usuarios.Telefone);
         }
     }
+    public Usuario? BuscarUsuario(string buscqCPF) //Retorna um objeto user, metodo verifica se existe um usuario
+    {
+        foreach(Pessoa user in listPessoas)
+        {
+            if(user.Cpf == buscqCPF)
+            {
+                return user;
+            }
+        }
+        return null;
+        
+    }
+    public Emprestimo? BuscaEmprestimo(string cpf, string buscaNlivro)
+    {
+        foreach(Emprestimo emprestimoAtivo in listEmprestimos)
+        {
+            if(emprestimoAtivo.User.Cpf == cpf && emprestimoAtivo.Book.Nome == buscaNlivro && emprestimoAtivo.DataDevolucao == null)
+            {
+                return emprestimoAtivo;
+            }
+        }
+        return null;
+    }
+    public string RealizarDevolução(string cpf, string buscaLivro)
+    {
+        Emprestimo? emprestimo = BuscaEmprestimo(cpf,buscaLivro);
+            if(emprestimo != null)
+        {
+            string situacao = emprestimo.RegistrarDevolucao();
+            emprestimo.Book.Devolver();
+                return situacao;
+        }
+        else
+        {
+            return "Não foi possivel efetuar a devolução";
+        }
+            
+
+    }
 }
