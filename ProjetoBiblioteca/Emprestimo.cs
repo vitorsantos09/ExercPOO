@@ -16,6 +16,6 @@ class Emprestimo // Recebe referencias dos objetos User e Livro e registra qual 
     public string RegistrarDevolucao()
     {
         DataDevolucao = DateTime.Now;
-        return "devolvido com sucesso"; 
+        return "Foi devolvido com sucesso"; 
     }
 }

@@ -39,7 +39,7 @@ class Sistema
         return null;
         
     }
-    public void RealizarEmprestimo(Usuario user, string buscaLivro)
+    public string RealizarEmprestimo(Usuario user, string buscaLivro)
     {
        Livro? livroBuscado = BuscarLivro(buscaLivro);
        
@@ -51,25 +51,102 @@ class Sistema
                 Emprestimo emp = new(user,livroBuscado);
                 listEmprestimos.Add(emp);
                 livroBuscado.Emprestar();
+                return "Livro emprestado!";
             }
             else
             {
-                return;
+                return "Idade não condiz com a classificação indicativa do livro";
             }
         }
         else
         {
-            return;
+            return "Livro inexistente";
         }
     }
-    public void ListarUsuarios()
+    public void ListarPessoas()
     {
-        foreach (Pessoa usuarios in listPessoas)
+        foreach (Pessoa pessoa in listPessoas)
         {
-            Console.WriteLine(usuarios.Nome);
-            Console.WriteLine(usuarios.Cpf);
-            Console.WriteLine(usuarios.Email);
-            Console.WriteLine(usuarios.Telefone);
+            Console.WriteLine(pessoa.Nome);
+            Console.WriteLine(pessoa.Cpf);
+            Console.WriteLine(pessoa.Email);
+            Console.WriteLine(pessoa.Telefone);
+            if(pessoa is Usuario)
+            {
+                foreach(Usuario user in listPessoas)
+                {
+                    Console.WriteLine(user.Idade);
+                }
+                
+            }
+            else if (pessoa is Bibliotecario)
+            {
+                foreach(Bibliotecario bilio in listPessoas)
+                {
+                    Console.WriteLine(bilio.Matricula);
+                }
+            }
+            else
+            {
+                foreach(Administrador admin in listPessoas)
+                {
+                    Console.WriteLine(admin.Matricula_admin);
+                }
+            }
+        }
+    }
+    public void ListarLivros()
+    {
+        foreach(Livro livros in listLivros)
+        {
+            Console.WriteLine(livros.Nome);
+            Console.WriteLine(livros.Classificacao);
+            Console.WriteLine(livros.Genero);
+        }
+    }
+
+    public void ListarDisponiveis()
+    {
+        foreach(Livro livrosDisp in listLivros)
+        {
+            if (livrosDisp.Disponivel == true)
+            {
+            Console.WriteLine(livrosDisp.Nome);
+            Console.WriteLine(livrosDisp.Classificacao);
+            Console.WriteLine(livrosDisp.Genero);
+            }
+        }
+    }
+    public void ListarEmp()
+    {
+        foreach(Emprestimo empAtivo in listEmprestimos)
+        {
+            if(empAtivo.DataDevolucao == null)
+            {
+                Console.WriteLine(empAtivo.User.Nome);
+                Console.WriteLine(empAtivo.User.Cpf);
+                Console.WriteLine(empAtivo.Book.Nome);
+                Console.WriteLine(empAtivo.DataEmprestimo);
+            }
+        }
+    }
+    public void ListHistorico()
+    {
+        foreach(Emprestimo empHist in listEmprestimos)
+        {
+            
+                Console.WriteLine($"Usuario: {empHist.User.Nome}");
+                Console.WriteLine($"Livro: {empHist.Book.Nome}");
+                Console.WriteLine($"Data do emprestimo: {empHist.DataEmprestimo}");
+                if(empHist.DataDevolucao == null)
+            {
+                Console.WriteLine("Ainda não devolvido");
+            }
+            else
+            {
+                Console.WriteLine(empHist.DataDevolucao);
+
+            }
         }
     }
     public Usuario? BuscarUsuario(string buscqCPF) //Retorna um objeto user, metodo verifica se existe um usuario

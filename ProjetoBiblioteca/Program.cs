@@ -10,20 +10,22 @@ do
     Console.WriteLine("==================================");
     Console.WriteLine("1. Cadastrar tipo de Pessoa");
     Console.WriteLine("2. Cadastrar Livros");
-    Console.WriteLine("3. Buscar Livro");
-    Console.WriteLine("4. Realizar Emprestimo");
-    Console.WriteLine("5. Realizar Devolução");
+    Console.WriteLine("3. Listagem");
+    Console.WriteLine("4. Buscar Livro");
+    Console.WriteLine("5. Realizar Emprestimo");
+    Console.WriteLine("6. Realizar Devolução");
+    Console.WriteLine("7. Listar Historicos de Emprestimos");
     Console.WriteLine("0. Sair");
+    Console.WriteLine("==================================");
     if (int.TryParse(Console.ReadLine(), out op))
     {
         switch (op)
         {
             case 1:
-
-                Console.WriteLine("==================================");
                 Console.WriteLine("1. Cadastrar Usuario");
                 Console.WriteLine("2. Cadastrar Bibliotecario[a]");
                 Console.WriteLine("3. Cadastrar Administrador[a]");
+                Console.WriteLine("==================================");
                 if (int.TryParse(Console.ReadLine(), out int opCad))
                 {
                     Cadastrar(out string nome, out string email, out string telefone, out string cpf);
@@ -44,20 +46,47 @@ do
                                 string matriculaAdmin = Console.ReadLine()!;
                             sistemabi.CadastrarAdministrador(nome, email, telefone, cpf, matriculaAdmin);
                             break;
+                        
                     }
                 }
                 else
                 {
                     Console.WriteLine("Digite um valor valido");
                 }
+                    Console.WriteLine("Pessoa Cadastrada! ");
+                    Console.Clear();
                 break;
             case 2:
+                Console.WriteLine("1. Listar pessoas");
+                Console.WriteLine("2. Listar livros");
+                Console.WriteLine("3. Listar livros Disponiveis");
+                Console.WriteLine("4. Listar emprestimos ativos");
+                if (int.TryParse(Console.ReadLine(), out int opList))
+                {
+                    switch (opList)
+                    {
+                        case 1:
+                            sistemabi.ListarPessoas();
+                        break;
+                        case 2:
+                            sistemabi.ListarLivros();
+                        break;
+                        case 3:
+                        sistemabi.ListarDisponiveis(); 
+                        break;
+                        case 4:
+                        sistemabi.ListarEmp();
+                        break;
+                    }
+                }
+            break;
+            case 3:
                 CadFrontLivro(out string nomeLivro, out ClassificacaoIndicativa classificacao, out GeneroLivro genero); //Declara as variaveis e faz a chamada no out para serem preenchidas no Metodo e retornarem para essa chamada
                     sistemabi.CadastrarLivro(nomeLivro, classificacao, genero);
                 Console.WriteLine("Livro Cadastrado com sucesso!");
                 break;
 
-            case 3:
+            case 4:
                 Console.WriteLine("Digite o nome do livro que deseja buscar: ");
                     buscaLivro = Console.ReadLine()!.ToUpper();
                 Livro? encontrado = sistemabi.BuscarLivro(buscaLivro);
@@ -74,7 +103,7 @@ do
                 }
                 break;
 
-            case 4:
+            case 5:
                 Console.WriteLine("Qual o cpf do usuario que deseja realizar o emprestimo: ");
                     BuscaCPF = Console.ReadLine()!;
                 Usuario? user = sistemabi.BuscarUsuario(BuscaCPF);
@@ -89,7 +118,8 @@ do
                     Console.WriteLine("não encontrado");
                 }
                 break;
-            case 5:
+            case 6:
+
                 Console.WriteLine("Qual o cpf do usuario que deseja efetuar a devolução: ");
                     BuscaCPF = Console.ReadLine()!;
                 Console.WriteLine("Qual o nome do livro que deseja devolver: ");
@@ -97,7 +127,10 @@ do
                 string situacao = sistemabi.RealizarDevolução(BuscaCPF,buscaLivro);
                 Console.WriteLine($"o livro {buscaLivro} {situacao}");
             break;
+            case 7:
+            break;
         }
+        
     }
     else
     {
