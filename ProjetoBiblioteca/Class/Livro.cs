@@ -1,25 +1,4 @@
-enum GeneroLivro
-{
-    Aventura = 1,
-    FiccaoCientifica = 2,
-    Acao = 3,
-    SuperHeroi = 4,
-    Suspense = 5,
-    Terror = 6,
-    Manga = 7,
-    HQ = 8,
-    Romance = 9,
-    Biografia = 10
-}
-enum ClassificacaoIndicativa
-{
-    Livre = 0,
-    DezAnos = 10,
-    DozeAnos = 12,
-    QuatorzeAnos = 14,
-    DezesseisAnos = 16,
-    DezoitoAnos = 18
-}
+
 class Livro
 {
     public string? Nome{get; private set;}

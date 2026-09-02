@@ -45,7 +45,7 @@ class Sistema
        
         if(livroBuscado != null && livroBuscado.Disponivel)
         {
-            int idadeMin = (int)livroBuscado.Classificacao;
+            int idadeMin = (int)livroBuscado.Classificacao; // Compara com o valor int do enum
             if(user.Idade >= idadeMin)
             {
                 Emprestimo emp = new(user,livroBuscado);
@@ -153,7 +153,7 @@ class Sistema
     {
         foreach(Pessoa pessoa in listPessoas)
         {
-            if(pessoa is Usuario user) //Verifica o tipo pessoa é Usuario?
+            if(pessoa is Usuario user) //Verifica o tipo pessoa é Usuario? Pattern Matching
             {
                 if(user.Cpf == buscqCPF)
                 {
@@ -188,7 +188,17 @@ class Sistema
         {
             return "Não foi possivel efetuar a devolução";
         }
-            
+    }
 
+    public Pessoa? BuscarPes(string cpf)
+    {
+        foreach(Pessoa pessoaBusc in listPessoas)
+        {
+            if(cpf == pessoaBusc.Cpf)
+            {
+                return pessoaBusc;
+            }
+        }
+        return null;
     }
 }
